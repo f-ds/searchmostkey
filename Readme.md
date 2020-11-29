@@ -1,7 +1,7 @@
-#searchmostkey
+# searchmostkey
 Guess the hottest amazon searched keywords reverse engineering its autocomplete API
 
-##build & run
+## build & run
 The project requires Maven 3 for the build and java > 8 for run.
 
 Assuming both are installed and configured and the project cloned in folder `/home/code/searchmostkey`
@@ -17,7 +17,7 @@ Then open your browser and type the URL `http://localhost:8080/estimate?keyword=
 }
 ```
 
-##How does it work
+## How does it work
 Amazon do not provide any information on the search-volume of keywords but we can reverse-engineer and estimate it using the Amazon search box autocomplete service.
 
 We assume that the autocomplete service returns the 10 most frequent searches for a given prefix.
