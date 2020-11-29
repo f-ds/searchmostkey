@@ -17,7 +17,6 @@ import java.util.Set;
 /**
  * This invokes autocomplete services from the endpoint https://completion.amazon.com/search/complete
  */
-@Component
 public class AmazonClientComplete extends AmazonClient{
 
     private static Log LOGGER = LogFactory.getLog(AmazonClientComplete.class);

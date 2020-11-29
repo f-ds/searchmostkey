@@ -7,6 +7,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -15,6 +16,7 @@ import java.util.Set;
 /**
  * This invokes autocomplete services from the endpoint https://completion.amazon.com/api/2017/suggestions
  */
+@Component
 public class AmazonClientSuggestion extends AmazonClient {
 
     private static Log LOGGER = LogFactory.getLog(AmazonClientSuggestion.class);
